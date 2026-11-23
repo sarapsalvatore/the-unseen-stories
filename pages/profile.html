@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050a13" />
+    <title>Your profile | THE UNSEEN</title>
+
+    <link rel="stylesheet" href="../css/profile.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="profile-background"></div>
+
+    <header class="profile-navbar">
+      <a href="../index.html" class="profile-brand">
+        <span class="profile-brand-mark">◈</span>
+        <span>THE UNSEEN</span>
+      </a>
+
+      <nav class="profile-nav-actions">
+        <a href="homepage.html" class="profile-nav-link">Discover</a>
+        <button
+          id="editProfileButton"
+          class="edit-profile-button"
+          type="button"
+        >
+          Edit profile
+        </button>
+        <button id="profileSignoutButton" class="signout-button" type="button">
+          Sign out
+        </button>
+      </nav>
+    </header>
+
+    <main class="profile-main">
+      <section class="profile-cover">
+        <div class="cover-glow"></div>
+        <div class="cover-caption">A READER'S WORLD</div>
+      </section>
+
+      <section class="profile-intro">
+        <div class="profile-avatar" id="profileAvatar">
+          <span>?</span>
+        </div>
+
+        <div class="profile-identity">
+          <p class="profile-eyebrow">THE UNSEEN MEMBER</p>
+          <h1 id="profileDisplayName">Your name</h1>
+          <p class="profile-username" id="profileUsername">@username</p>
+        </div>
+
+        <div class="profile-member-label">
+          <span class="member-dot"></span>
+          MEMBER
+        </div>
+      </section>
+
+      <section class="profile-bio-section">
+        <section class="profile-continue">
+          <a href="homepage.html" class="continue-button">
+            <span>Continue exploring</span>
+            <span class="continue-arrow">↗</span>
+          </a>
+        </section>
+
+        <p class="profile-bio" id="profileBio">Your story begins here.</p>
+
+        <div class="profile-details">
+          <span id="profileLocation" class="profile-detail hidden"></span>
+          <a
+            id="profileWebsite"
+            class="profile-detail hidden"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+        </div>
+      </section>
+
+      <section class="profile-stats">
+        <div class="stat-item">
+          <span class="stat-number" id="storiesReadCount">0</span>
+          <span class="stat-label">STORIES READ</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-number" id="followersCount">0</span>
+          <span class="stat-label">FOLLOWERS</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-number" id="followingCount">0</span>
+          <span class="stat-label">FOLLOWING</span>
+        </div>
+      </section>
+
+      <section class="achievements-section">
+        <div class="section-heading">
+          <div>
+            <p class="profile-eyebrow">MILESTONES & DISCOVERIES</p>
+            <h2>Your <span>achievements.</span></h2>
+          </div>
+
+          <span class="achievement-total" id="achievementTotal"
+            >0 UNLOCKED</span
+          >
+        </div>
+
+        <div class="achievements-grid" id="achievementsGrid"></div>
+      </section>
+
+      <section class="profile-activity-section">
+        <p class="profile-eyebrow">YOUR JOURNEY</p>
+        <h2>A world <span>to explore.</span></h2>
+        <p class="activity-placeholder">
+          Your reading journey will appear here as you discover stories.
+        </p>
+      </section>
+    </main>
+
+    <footer class="profile-footer">
+      <span>THE UNSEEN</span>
+      <span>EVERY READER HAS A STORY.</span>
+    </footer>
+
+    <script src="../js/profile-data.js"></script>
+    <script src="../js/achievements.js"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

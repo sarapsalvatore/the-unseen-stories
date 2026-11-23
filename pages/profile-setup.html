@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050a13" />
+    <title>Create your profile | THE UNSEEN</title>
+
+    <link rel="stylesheet" href="../css/profile-setup.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="setup-background"></div>
+    <div class="setup-glow setup-glow-one"></div>
+    <div class="setup-glow setup-glow-two"></div>
+
+    <main class="setup-page">
+      <header class="setup-header">
+        <a class="setup-brand" href="../index.html">
+          <span class="setup-brand-mark">◈</span>
+          <span>THE UNSEEN</span>
+        </a>
+
+        <span class="setup-step">YOUR IDENTITY <span>01 / 02</span></span>
+      </header>
+
+      <section class="setup-content">
+        <div class="setup-heading">
+          <p class="eyebrow">BEYOND THE STORY</p>
+          <h1>Create your <span>identity.</span></h1>
+          <p class="setup-description">
+            Every reader has a place in this world. Make yours recognizable.
+          </p>
+        </div>
+
+        <form id="profileForm" class="profile-form">
+          <div class="avatar-section">
+            <div class="avatar-preview" id="avatarPreview">
+              <span>?</span>
+            </div>
+
+            <div class="avatar-actions">
+              <label for="avatarInput" class="upload-button">
+                Upload profile picture
+              </label>
+              <input type="file" id="avatarInput" accept="image/*" hidden />
+              <button type="button" id="removeAvatar" class="remove-avatar">
+                Remove photo
+              </button>
+              <p>JPG, PNG or WEBP. Maximum 8 MB.</p>
+            </div>
+          </div>
+
+          <div class="form-divider"></div>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="displayName">DISPLAY NAME <span>*</span></label>
+              <input
+                id="displayName"
+                type="text"
+                maxlength="40"
+                placeholder="How should we call you?"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="username">USERNAME <span>*</span></label>
+              <div class="username-input">
+                <span>@</span>
+                <input
+                  id="username"
+                  type="text"
+                  minlength="3"
+                  maxlength="20"
+                  placeholder="yourusername"
+                  required
+                />
+              </div>
+              <small>Letters, numbers, underscores and dots.</small>
+            </div>
+
+            <div class="form-field full-width">
+              <label for="bio">ABOUT YOU</label>
+              <textarea
+                id="bio"
+                maxlength="180"
+                rows="4"
+                placeholder="Tell the world a little about yourself..."
+              ></textarea>
+              <small class="character-count"
+                ><span id="bioCount">0</span> / 180</small
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="location">LOCATION</label>
+              <input
+                id="location"
+                type="text"
+                maxlength="60"
+                placeholder="Your city or country"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="website">WEBSITE</label>
+              <input
+                id="website"
+                type="url"
+                maxlength="150"
+                placeholder="https://yourwebsite.com"
+              />
+            </div>
+          </div>
+
+          <p class="form-error" id="formError" role="alert"></p>
+
+          <div class="form-bottom">
+            <p>Your profile can be edited later.</p>
+            <button type="submit" class="continue-button">
+              Create my profile <span>↗</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <footer class="setup-footer">
+        <span>THE UNSEEN</span>
+        <span>A DIFFERENT WORLD IS WAITING.</span>
+      </footer>
+    </main>
+
+    <script src="../js/profile-setup.js"></script>
+  </body>
+</html>

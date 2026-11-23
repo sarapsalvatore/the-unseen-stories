@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030b18" />
+    <title>THE UNSEEN | Discover Stories</title>
+
+    <link rel="stylesheet" href="../css/homepage.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page-background"></div>
+
+    <!-- TOP NAVIGATION -->
+    <header class="topbar">
+      <a href="homepage.html" class="brand">
+        <span class="brand-eye">◉</span>
+        <span class="brand-name">THE UNSEEN</span>
+      </a>
+
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        aria-label="Open menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link active" data-nav="home">
+          <span>⌂</span> Home
+        </a>
+        <a href="#explore" class="nav-link" data-nav="explore">
+          <span>◉</span> Explore
+        </a>
+        <a href="#collection" class="nav-link" data-nav="library">
+          <span>▣</span> My Library
+        </a>
+        <a href="#creators" class="nav-link" data-nav="following">
+          <span>♧</span> Following
+        </a>
+        <a href="#create" class="nav-link" data-nav="create">
+          <span>⊕</span> Create
+        </a>
+      </nav>
+
+      <div class="topbar-actions">
+        <label class="search-box">
+          <span>⌕</span>
+          <input
+            id="storySearch"
+            type="search"
+            placeholder="Search stories..."
+            autocomplete="off"
+          />
+        </label>
+
+        <button
+          class="icon-button notification-button"
+          id="notificationButton"
+          aria-label="Notifications"
+        >
+          ♧
+          <span class="notification-dot"></span>
+        </button>
+
+        <a
+          href="profile.html"
+          class="top-avatar"
+          id="topProfileButton"
+          aria-label="Open profile"
+        >
+          <span id="topAvatarFallback">?</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="home" class="homepage">
+      <!-- WELCOME -->
+      <section class="welcome-section">
+        <div class="welcome-line"></div>
+        <div>
+          <p class="welcome-title">
+            Welcome back, <span id="welcomeName">Reader</span>.
+          </p>
+          <p class="welcome-subtitle">Your next story is waiting.</p>
+        </div>
+      </section>
+
+      <!-- FEATURED STORY -->
+      <section class="featured-section" id="featuredSection">
+        <div class="featured-backdrop" id="featuredImage"></div>
+        <div class="featured-shade"></div>
+
+        <div class="featured-content">
+          <span class="featured-label"><span>★</span> FEATURED</span>
+          <p class="featured-overline">THE</p>
+          <h1 id="featuredTitle">THE<br />UNSEEN</h1>
+          <p class="featured-description" id="featuredDescription">
+            A world where stories never end...<br />
+            and secrets never die.
+          </p>
+
+          <div class="featured-meta">
+            <span>♙ NightWriter</span>
+            <span>♧ Fantasy</span>
+            <span>▣ 24 Episodes</span>
+          </div>
+
+          <div class="featured-actions">
+            <button class="primary-button" id="readFeaturedButton">
+              ▶ Start Reading
+            </button>
+            <button class="outline-button" id="detailsFeaturedButton">
+              ⓘ More Details
+            </button>
+            <button class="outline-button" id="saveFeaturedButton">
+              ♧ Add to Library
+            </button>
+          </div>
+        </div>
+
+        <div class="featured-controls">
+          <div class="featured-dots">
+            <button
+              class="featured-dot active"
+              data-slide="0"
+              aria-label="Featured story 1"
+            ></button>
+            <button
+              class="featured-dot"
+              data-slide="1"
+              aria-label="Featured story 2"
+            ></button>
+            <button
+              class="featured-dot"
+              data-slide="2"
+              aria-label="Featured story 3"
+            ></button>
+            <button
+              class="featured-dot"
+              data-slide="3"
+              aria-label="Featured story 4"
+            ></button>
+          </div>
+          <button
+            class="round-arrow"
+            id="previousFeatured"
+            aria-label="Previous featured story"
+          >
+            ‹
+          </button>
+          <button
+            class="round-arrow"
+            id="nextFeatured"
+            aria-label="Next featured story"
+          >
+            ›
+          </button>
+        </div>
+      </section>
+
+      <!-- MAIN DASHBOARD GRID -->
+      <div class="dashboard-grid">
+        <!-- CONTINUE READING -->
+        <section class="content-section continue-section" id="continueSection">
+          <div class="section-heading">
+            <h2>Continue Your Story</h2>
+            <a href="#continueSection" class="view-all"
+              >View all <span>→</span></a
+            >
+          </div>
+
+          <article
+            class="continue-card story-item"
+            data-search="broken hearts moonlight episode choice"
+          >
+            <div class="continue-cover cover-broken"></div>
+            <div class="continue-info">
+              <h3>Broken Hearts</h3>
+              <p class="story-author">Moonlight</p>
+              <p class="episode-line">Episode 7 · The Choice</p>
+
+              <div class="progress-row">
+                <div class="progress-track">
+                  <span style="width: 68%"></span>
+                </div>
+                <strong>68%</strong>
+              </div>
+
+              <div class="continue-bottom">
+                <span>Last read: 2h ago</span>
+                <button class="small-primary-button story-action">
+                  ▶ Continue
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- RECOMMENDED -->
+        <section class="content-section recommended-section" id="explore">
+          <div class="section-heading">
+            <h2>Stories You Might Love</h2>
+            <a href="#freshSection" class="view-all">View all <span>→</span></a>
+          </div>
+
+          <div class="recommendation-grid">
+            <article
+              class="recommendation-card story-item"
+              data-search="whispers of the moon dreamer fantasy"
+            >
+              <div class="recommendation-cover cover-whispers"></div>
+              <div class="recommendation-info">
+                <h3>Whispers<br />of the Moon</h3>
+                <p>Dreamer</p>
+                <small>Fantasy · 32 episodes</small>
+                <div class="card-actions">
+                  <span>♡ 24.3K</span>
+                  <button
+                    class="bookmark-button"
+                    aria-label="Save Whispers of the Moon"
+                  >
+                    ♧
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="recommendation-card story-item"
+              data-search="the silent princess astra romance"
+            >
+              <div class="recommendation-cover cover-princess"></div>
+              <div class="recommendation-info">
+                <h3>The Silent<br />Princess</h3>
+                <p>Astra</p>
+                <small>Romance · 18 episodes</small>
+                <div class="card-actions">
+                  <span>♡ 21.7K</span>
+                  <button
+                    class="bookmark-button"
+                    aria-label="Save The Silent Princess"
+                  >
+                    ♧
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="recommendation-card story-item"
+              data-search="alphas curse shadowfox supernatural"
+            >
+              <div class="recommendation-cover cover-alpha"></div>
+              <div class="recommendation-info">
+                <h3>Alpha's<br />Curse</h3>
+                <p>ShadowFox</p>
+                <small>Supernatural · 20 episodes</small>
+                <div class="card-actions">
+                  <span>♡ 19.1K</span>
+                  <button
+                    class="bookmark-button"
+                    aria-label="Save Alpha's Curse"
+                  >
+                    ♧
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- TRENDING -->
+        <section class="content-section trending-section" id="trendingSection">
+          <div class="section-heading">
+            <h2>Trending Now</h2>
+            <a href="#trendingSection" class="view-all"
+              >View all <span>→</span></a
+            >
+          </div>
+
+          <div class="trending-list">
+            <article
+              class="trending-item story-item"
+              data-search="the unseen nightwriter fantasy"
+            >
+              <span class="trend-number">1</span>
+              <div class="trend-cover cover-trend-one"></div>
+              <div class="trend-info">
+                <h3>The Unseen</h3>
+                <p>NightWriter</p>
+              </div>
+              <div class="trend-stats">
+                <span>♨ 125.4K</span><span>◉ 24</span>
+              </div>
+            </article>
+
+            <article
+              class="trending-item story-item"
+              data-search="dark paradise velora"
+            >
+              <span class="trend-number">2</span>
+              <div class="trend-cover cover-trend-two"></div>
+              <div class="trend-info">
+                <h3>Dark Paradise</h3>
+                <p>Velora</p>
+              </div>
+              <div class="trend-stats">
+                <span>♨ 98.7K</span><span>◉ 16</span>
+              </div>
+            </article>
+
+            <article
+              class="trending-item story-item"
+              data-search="final breath ravendusk"
+            >
+              <span class="trend-number">3</span>
+              <div class="trend-cover cover-trend-three"></div>
+              <div class="trend-info">
+                <h3>Final Breath</h3>
+                <p>RavenDusk</p>
+              </div>
+              <div class="trend-stats">
+                <span>♨ 87.2K</span><span>◉ 14</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- SECOND DASHBOARD ROW -->
+      <div class="lower-grid">
+        <!-- FRESH STORIES -->
+        <section class="content-section fresh-section" id="freshSection">
+          <div class="section-heading">
+            <h2>Freshly Unseen</h2>
+            <a href="#freshSection" class="view-all">View all <span>→</span></a>
+          </div>
+
+          <div class="fresh-grid">
+            <article
+              class="fresh-card story-item"
+              data-search="the lost crown eclipse fantasy"
+            >
+              <div class="fresh-cover cover-crown">
+                <span class="new-label">NEW</span>
+              </div>
+              <h3>The Lost Crown</h3>
+              <p>Eclipse</p>
+              <small>Today</small>
+            </article>
+
+            <article
+              class="fresh-card story-item"
+              data-search="midnight letters lunawrites"
+            >
+              <div class="fresh-cover cover-letters">
+                <span class="new-label">NEW</span>
+              </div>
+              <h3>Midnight Letters</h3>
+              <p>LunaWrites</p>
+              <small>Today</small>
+            </article>
+
+            <article
+              class="fresh-card story-item"
+              data-search="shattered dreams dreamer"
+            >
+              <div class="fresh-cover cover-dreams">
+                <span class="new-label">NEW</span>
+              </div>
+              <h3>Shattered Dreams</h3>
+              <p>Dreamer</p>
+              <small>Yesterday</small>
+            </article>
+          </div>
+        </section>
+
+        <!-- GENRES -->
+        <section class="content-section genre-section">
+          <div class="section-heading">
+            <h2>Explore by Genre</h2>
+            <a href="#explore" class="view-all">View all <span>→</span></a>
+          </div>
+
+          <div class="genre-grid">
+            <button class="genre-card" data-genre="Romance">
+              <span>♡</span><small>Romance</small>
+            </button>
+            <button class="genre-card" data-genre="Drama">
+              <span>♢</span><small>Drama</small>
+            </button>
+            <button class="genre-card" data-genre="Mystery">
+              <span>⌕</span><small>Mystery</small>
+            </button>
+            <button class="genre-card" data-genre="Thriller">
+              <span>⚔</span><small>Thriller</small>
+            </button>
+            <button class="genre-card" data-genre="Horror">
+              <span>☠</span><small>Horror</small>
+            </button>
+            <button class="genre-card" data-genre="Fantasy">
+              <span>♧</span><small>Fantasy</small>
+            </button>
+            <button class="genre-card" data-genre="Sci-Fi">
+              <span>✧</span><small>Sci-Fi</small>
+            </button>
+            <button class="genre-card" data-genre="Adventure">
+              <span>⌁</span><small>Adventure</small>
+            </button>
+          </div>
+        </section>
+
+        <!-- CREATORS -->
+        <section class="content-section creators-section" id="creatorsSection">
+          <div class="section-heading">
+            <h2>Discover the Creators</h2>
+            <a href="#creatorsSection" class="view-all"
+              >View all <span>→</span></a
+            >
+          </div>
+
+          <article class="creator-card">
+            <div class="creator-avatar creator-nightwriter"></div>
+            <div class="creator-info">
+              <h3>NightWriter <span class="verified-mark">✓</span></h3>
+              <p>Stories beyond reality...</p>
+              <small>245.7K Followers</small>
+              <div class="creator-badges"><span>♛</span><span>★</span></div>
+            </div>
+            <button class="follow-button">Follow</button>
+          </article>
+        </section>
+      </div>
+
+      <!-- BOTTOM FEATURE CARDS -->
+      <section class="feature-cards">
+        <article class="feature-card collection-feature" id="collection">
+          <div class="feature-symbol">▤</div>
+          <div>
+            <h2>Your Collection</h2>
+            <p>Continue exploring your saved stories.</p>
+          </div>
+          <button
+            class="feature-button"
+            data-toast="Your library is coming soon."
+          >
+            Go to Library →
+          </button>
+        </article>
+
+        <article class="feature-card journey-feature" id="journey">
+          <div class="feature-symbol">▥</div>
+          <div>
+            <h2>Your Journey</h2>
+            <p>Track your progress and achievements.</p>
+          </div>
+          <a href="profile.html" class="feature-button">View Stats →</a>
+        </article>
+
+        <article class="feature-card create-feature" id="create">
+          <div class="feature-symbol">✎</div>
+          <div>
+            <h2>Create Your Own Story</h2>
+            <p>Bring your imagination to life.</p>
+          </div>
+          <button
+            class="feature-button"
+            data-toast="Creator Studio is coming soon."
+          >
+            Open Creator Studio →
+          </button>
+        </article>
+      </section>
+
+      <footer class="homepage-footer">
+        <span>THE UNSEEN</span>
+        <span>A WORLD WHERE STORIES NEVER END.</span>
+      </footer>
+    </main>
+
+    <!-- MUSIC PLAYER -->
+    <audio
+      id="homepageMusic"
+      src="../assets/audio/the-unseen.mp3"
+      preload="auto"
+      loop
+    ></audio>
+
+    <div class="music-player">
+      <div class="music-track">
+        <div class="music-art"></div>
+        <div class="music-track-info">
+          <strong>THE UNSEEN</strong>
+          <span>Your world of stories</span>
+        </div>
+      </div>
+
+      <div class="music-controls">
+        <button id="musicPrevious" aria-label="Previous track">|◀</button>
+        <button
+          id="musicPlayButton"
+          class="music-play-button"
+          aria-label="Play music"
+        >
+          ▶
+        </button>
+        <button id="musicNext" aria-label="Next track">▶|</button>
+      </div>
+
+      <div class="music-progress">
+        <span id="musicCurrentTime">0:00</span>
+        <input id="musicSeek" type="range" min="0" max="100" value="0" />
+        <span id="musicDuration">0:00</span>
+      </div>
+
+      <div class="music-extra">
+        <button id="musicMuteButton" aria-label="Mute music">◖</button>
+        <input
+          id="musicVolume"
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.45"
+        />
+      </div>
+    </div>
+
+    <div class="toast" id="homepageToast" role="status"></div>
+
+    <script src="../js/homepage.js"></script>
+  </body>
+</html>
